@@ -25,19 +25,15 @@ function App() {
     }
       
     
-    else if(gpaInputRef.current.value<0.67){
-      setAlert("your guc GPA can't be less than 0.67")
-      setGPA(0)
-
-    }
+   
     else if(gpaInputRef.current.value<0.66){
       setAlert("your guc GPA can't be less than 0.66")
-      setGPA(4)
+      setGPA(0)
 
     }
 
     else {
-      var gpa1 = 4.0 - (gpaInputRef.current.value - 0.7)
+      var gpa1 = 4.3 - (gpaInputRef.current.value - 0.7)
       var gpa2 = (gpa1 * 4.0) / 4.3
       setAlert("")
       setGPA(roundToHundredth(gpa2))
