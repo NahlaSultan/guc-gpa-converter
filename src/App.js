@@ -25,8 +25,8 @@ function App() {
     }
       
     
-    else if(gpaInputRef.current.value<0.66){
-      setAlert("your guc GPA can't be less than 0.66")
+    else if(gpaInputRef.current.value<0.67){
+      setAlert("your guc GPA can't be less than 0.67")
       setGPA(0)
 
     }
@@ -37,7 +37,7 @@ function App() {
     }
 
     else {
-      var gpa1 = 4.3 - (gpaInputRef.current.value - 0.7)
+      var gpa1 = 4.0 - (gpaInputRef.current.value - 0.7)
       var gpa2 = (gpa1 * 4.0) / 4.3
       setAlert("")
       setGPA(roundToHundredth(gpa2))
@@ -78,6 +78,8 @@ function App() {
             <div class="gpaRes">
               <h2 style={{ 'text-align': "center" }}>  {gpaRes}/4.0</h2><br />
               <h5 style={{ 'text-align': "center" , 'color':'red'}}>  {alert}</h5><br />
+              <h5 style={{ 'text-align': "center" }}>  note: this conversion is percentage based, meaning it shows you your percentage from 0.0 to 4.0 on the 4.0 scale based on your gpa percentage from 5.0 to 0.7 in the guc scale</h5><br />
+              
 
             </div>
 
