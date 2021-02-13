@@ -5,6 +5,7 @@ import './main.css'
 function App() {
   const gpaInputRef = useRef()
   const [gpaRes, setGPA] = useState(0)
+  const [alert, setAlert] = useState("")
 
   const roundToHundredth = (value) => {
     return Number(value.toFixed(3));
@@ -13,18 +14,27 @@ function App() {
   function convertGPA() {
 
     if (gpaInputRef.current.value == "") {
-      console.log("here")
-      setGPA("Enter your GPA")
+      setGPA(0)
+      setAlert("Enter your GPA")
       return
     }
 
-    if (gpaInputRef.current.value >= 5)
+    if (gpaInputRef.current.value >= 5){
+      setGPA(0)
+      setAlert("")
+    }
+      
+    
+    else if(gpaInputRef.current.value<0.66){
+      setAlert("your guc GPA can't be less than 0.66")
       setGPA(0)
 
+    }
 
     else {
       var gpa1 = 4.3 - (gpaInputRef.current.value - 0.7)
       var gpa2 = (gpa1 * 4.0) / 4.3
+      setAlert("")
       setGPA(roundToHundredth(gpa2))
     }
 
@@ -62,6 +72,8 @@ function App() {
 
             <div class="gpaRes">
               <h2 style={{ 'text-align': "center" }}>  {gpaRes}/4.0</h2><br />
+              <h5 style={{ 'text-align': "center" , 'color':'red'}}>  {alert}</h5><br />
+
             </div>
 
 

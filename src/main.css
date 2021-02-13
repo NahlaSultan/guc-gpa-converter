@@ -137,7 +137,7 @@ body > #root > div {
   padding: 10px;
 
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(223,19,69,1) 35%, rgb(233, 233, 233) 100%);
+background: linear-gradient(90deg, rgb(168, 168, 179) 0%, rgb(240, 238, 219) 35%, rgb(233, 233, 233) 100%);
 
  
   display: -webkit-box;
