@@ -30,6 +30,11 @@ function App() {
       setGPA(0)
 
     }
+    else if(gpaInputRef.current.value<0.66){
+      setAlert("your guc GPA can't be less than 0.66")
+      setGPA(4)
+
+    }
 
     else {
       var gpa1 = 4.3 - (gpaInputRef.current.value - 0.7)
