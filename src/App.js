@@ -78,7 +78,7 @@ function App() {
             <div class="gpaRes">
               <h2 style={{ 'text-align': "center" }}>  {gpaRes}/4.0</h2><br />
               <h5 style={{ 'text-align': "center" , 'color':'red'}}>  {alert}</h5><br />
-              <h5 style={{ 'text-align': "center" }}>  note: this conversion is percentage based, meaning it shows you your percentage from 0.0 to 4.0 on the 4.0 scale based on your gpa percentage from 5.0 to 0.7 in the guc scale</h5><br />
+              <h5 style={{ 'text-align': "center" }}>  note: this conversion is percentage based, meaning it shows you your percentage from 0.0 to 4.0 on the 4.0 scale based on your gpa percentage from 5.0 to 0.7 on the guc scale</h5><br />
               
 
             </div>
