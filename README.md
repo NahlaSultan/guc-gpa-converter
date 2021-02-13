@@ -17,8 +17,4 @@ All you have to do is go to **[https://guc-gpa.herokuapp.com/](https://guc-gpa.h
 and calculate your GPA now
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![Screen Shot 2021-02-13 at 4 09 25 PM](https://user-images.githubusercontent.com/46445279/107852041-eaa5c380-6e16-11eb-8edc-dc4445efb66b.png)
